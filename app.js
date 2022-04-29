@@ -15,13 +15,13 @@ while (true) {
                 data.splice(data[x], 1);
             }
         }
-    } else if (userData[0] = "del" || userData[0] == "del," || userData[0] == "del.") {
+    } else if (userData[0] == "del" || userData[0] == "del," || userData[0] == "del.") {
         
         userData.shift();
 
         for (let i = 0; i < data.length; i++) {
             if (data[i] == userData) {
-                data.splice(data[i], 1);
+                data.splice(i, 1);
             }
         }
 
